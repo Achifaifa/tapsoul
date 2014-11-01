@@ -1,0 +1,33 @@
+<div id="marcoSup" style="position: fixed; top: 0; left: 0; z-index: 100;" onclick="clickMovile();"></div>
+
+
+
+<div id="btn_Sentimiento" class="col-md-12 text-center" style="height: 100%">
+    <div class="col-md-4 col-xs-2 text-left" style="color: #86716c; font-size: 20px;">
+        <i id="textFeel" style="display: none;">Feeling...</i>
+    </div>
+    
+    <div class="col-md-4 col-xs-8">
+        
+        <center id="centroLoad" style="position: relative;">
+            <div id="load1" class=" borde" style="position: absolute; top: 100px; width: 25px; height: 25px; left: 50%; margin-left: -12.5px; background: rgba(197,67,46,0.1); display: none;"></div>
+            <div id="load2" class=" borde" style="position: absolute; top: 87.5px; width: 50px; height: 50px; left: 50%; margin-left: -25px; background: rgba(197,67,46,0.1); display: none;"></div>
+            <div id="load3" class=" borde" style="position: absolute; top: 75px; width: 75px; height: 75px; left: 50%; margin-left: -37.5px; background: rgba(197,67,46,0.1); display: none;"></div>
+            <div id="load4" class=" borde" style="position: absolute; top: 62.5px; width: 100px; height: 100px; left: 50%; margin-left: -50px; background: rgba(197,67,46,0.1); display: none;"></div>
+            <div id="load5" class=" borde" style="position: absolute; top: 50px; width: 125px; height: 125px; left: 50%; margin-left: -62.5px; background: rgba(197,67,46,0.1); display: none;"></div>
+            <div id="load6" class=" borde" style="position: absolute; top: 37.5px; width: 150px; height: 150px; left: 50%; margin-left: -75px; background: rgba(197,67,46,0.1); display: none;"></div>
+            <div id="load7" class=" borde" style="position: absolute; top: 25px; width: 175px; height: 175px; left: 50%; margin-left: -87.5px; background: rgba(197,67,46,0.1); display: none;"></div>
+            <div id="load8" class=" borde" style="position: absolute; top: 12.5px; width: 200px; height: 200px; left: 50%; margin-left: -100px; background: rgba(197,67,46,0.1); display: none;"></div>
+            <div id="load9" class=" borde" style="position: absolute; top: 0px; width: 225px; height: 225px; left: 50%; margin-left: -112.5px; background: rgba(197,67,46,0.1); display: none;"></div>
+            
+            <img id="btn_centro" src="<?php echo $_layoutParams['ruta_img']; ?>sentimiento.png" class="img-responsive cargador" style="display: none;"  />
+        </center>
+    </div>
+    
+    <div class="col-md-4 col-xs-2"></div>
+</div>
+
+<form id="enviarSentimiento" method="post" action="<?php BASE_URL; ?>">
+    <input type="hidden" name="generar" value="1"  />
+    <input type="hidden" name="speed" id="speed" value=""  />
+</form>

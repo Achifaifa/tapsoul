@@ -1,0 +1,17 @@
+@font-face {
+    font-family: source-light;
+    src: url(../fonts/SourceSansPro-Light.otf);
+}
+
+body {
+    background: #fae5a7;
+    
+    font-family: source-light;
+}
+
+.borde
+{
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
